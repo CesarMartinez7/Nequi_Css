@@ -6,7 +6,7 @@ let persona={
     telefono:3215668657,
     edad:18,
     activo: true,
-    saldo:2000000000,
+    saldo:2000000,
     tarjeta:2323,
 };
 

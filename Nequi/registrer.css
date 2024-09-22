@@ -1,24 +1,21 @@
 
-
-
-
-
-
 :root{
     --color_nequi:#561e9a;
     --blanco_nequi:#ECF3F8;
     --gris_nequi: #ECE7F5;
     --fuente-total:"Manrope";
     --green:#fff0;
-    --white:#ffff
+    --white:#ffff;
+    
 }
 
 .container{
     display: flex;
     height: 100%;
     flex-direction: column;
-    background-color: var(--color_nequi);
+    background:linear-gradient(var(--color_nequi),#5c1ec0);
     box-sizing: border-box;
+    
 }
 
 
@@ -35,15 +32,29 @@ html{
     
 }
 
+
+
+
 .navbar{
-    background-color: var(--color_nequi);
+    background-color:var(--color_nequi);
     padding: 10px 30px;
     display: flex;
-    justify-content:space-between;
+    flex-direction: row;
     z-index: 20;
+    color: white;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
     
 }
 
+.navbar div button{
+    margin: 5px;
+    background-color: var(--color_nequi);
+}
 
 
 .logo-menu{
@@ -57,7 +68,7 @@ html{
     text-align: center;
     padding: 6.74em;
     color: white;
-    background-color: var(--color_nequi);
+    
 }
 
 
@@ -222,6 +233,7 @@ h3{
 #seguir:hover{
     background-color: #F1BFDA;
     color: var(--color_nequi);
+    transition: all ease 1s;
     
 }
 
@@ -284,19 +296,20 @@ button{
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    width: 65vh;
+    width: 60vh;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     -webkit-box-shadow: -2px 2px 10px -4px rgba(0, 0, 0, 0.37);
     -moz-box-shadow: -2px 2px 10px -4px rgba(0, 0, 0, 0.37);
     box-shadow: -2px 2px 10px -4px rgba(0, 0, 0, 0.37);;
-    min-width: 340px;
+    
 }
 
 
 p{
-    font-weight: bold;
+    font-weight: lighter;
+    font-size: 1.20em;
     
 }
 
@@ -304,15 +317,48 @@ p{
 .tarjeta{
     width: 50vh;
     box-sizing: border-box;
-    background-color: var(--color_nequi);
+    background: linear-gradient(var(--color_nequi),#520ebe);
     border-radius: 10px;
     padding: 20px;
     color: var(--blanco_nequi);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    display: flex;
+    flex-direction: column;
     
 }
 
 .candado{
     font-size: 18px;    
 }
+.opciones button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    gap: 5px;
+}
 
+.opciones button span{
+    text-align: center;
+    color: var(--color_nequi);
+    font-size: 10;
+    font-weight: lighter;
+    font-family: system-ui;
+}
+
+.tarjeta-info{
+    display: flex;
+    justify-content:space-between;
+}
+
+.tarjeta-info span{
+    display: block;
+    font-style: italic;
+}
+
+.tarjeta-info-adv{
+    font-size: 14px;
+    font-style: italic;
+}

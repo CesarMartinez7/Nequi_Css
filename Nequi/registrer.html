@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/NEQUI-CESAR/registrer.css">
+  <title>Nequi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIccx8LJNvtf7I-2_NzuKc2P_nuoK3zOtCVQ&s" type="image/x-icon">
+
+</head>
+<body>
+
+	
+	<div class="container">
+		<header class="navbar">
+			<div class="logo-menu">
+				Nequi
+			</div>
+		</header>
+		<div class="datos">
+			<h2>Bienvenido</h2>
+			<h4>Disponible</h4>
+			<h1 id="cantidadDinero"></h1>
+			<div class="boton_div">
+				<button type="button" class="boton" id="detalles">
+					Ver Detalles
+				</button>
+			</div>
+		</div>
+		
+		<main class="main">
+			<div class="opciones">
+				<button id="consignar" aria-label="Consignar" title="Consignar">
+					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>
+				</button>
+				<button id="botonRecargar" >
+					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-badge-dollar-sign"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 18V6"/></svg>	
+				</button>
+				<button id="botonCard">
+					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-id-card"><path d="M16 10h2"/><path d="M16 14h2"/><path d="M6.17 15a3 3 0 0 1 5.66 0"/><circle cx="9" cy="11" r="2"/><rect x="2" y="5" width="20" height="14" rx="2"/></svg>
+				</button>
+				<button id="bottonMas">
+					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
+				</button>
+			</div>
+			
+			<div class="movimientos">
+				<h3>Movimientos</h3>
+				<div class="trasferencia">
+					<div class="flechas_green">-></div>
+					<h4>Trasferencia recibida</h4>
+					<h4 style="color: green;">$200,00</h4>
+				</div>
+				<div class="trasferencia">
+					<div class="flechas_red"><-</div>
+					<h4>Pago de servicio</h4>
+					<h4 style="color: red;">$25,200</h4>
+				</div>
+			</div>
+
+		</main>
+		
+		<div class="consignar esconder" id="ventanaConsignar">
+			<div style="display: flex; justify-content:right;">
+			<button  id="cerrar">
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/a></svg>
+			</button>
+		</div>
+			<h2>Envia plata</h2>
+			<div style="display: flex; flex-direction:column">
+				<input class="input" type="Tel" placeholder="Cel" required>	
+				<input class="input" type="text" placeholder="¿Cuanto?" id="dineroAConsignar">
+				<input class="input" type="text" placeholder="Mensaje" >
+				<button type="submit" id="seguir">Sigue</button>
+			</div>
+		</div>
+		
+		<div class="recargar esconder" id=ventanaRecargar>
+			<div style="display: flex; justify-content:right" id="ventanaCerrar">
+				<button id="cerrar">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+				</button>
+			</div>
+			<h2>Recargar</h2>
+			<h1>sdfoisdifsdfoi</h1>
+		</div>
+		<div class="card esconder" id="ventanaCard">
+			<div style="display: flex; justify-content:right" id="ventanaCerrar">
+				<button class="candado"><i class="fa-solid fa-lock"></i></button>
+				<button id="cerrar">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+				</button>
+			</div>
+			<h3>Tarjeta</h3>
+			<div class="tarjeta ">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" id="Visa-Logo--Streamline-Logos" height="50" width="50"><desc>Visa Logo Streamline Icon: https://streamlinehq.com</desc><path fill="#FFFF" fill-rule="evenodd" d="M1 8.5h2.698a1 1 0 0 1 0.976 0.783L5.5 13 7 8.5h2l-2.5 7h-2L3 9.5l-2 -1Zm9 0h1.5l-1 7H9l1 -7Zm5.003 0c0.8 0 1.62 0.124 1.954 0.291l-0.236 1.426c-0.303 -0.165 -0.99 -0.31 -1.648 -0.31 -0.658 0 -0.846 0.415 -0.846 0.595 0 0.247 0.333 0.424 0.756 0.648 0.734 0.39 1.738 0.923 1.738 2.217 0 1.502 -1.902 2.133 -2.903 2.133 -0.8 0 -1.778 -0.124 -2.112 -0.291l0.235 -1.426c0.299 0.103 1.123 0.333 1.781 0.333 0.66 0 1.147 -0.333 1.147 -0.618 0 -0.426 -0.422 -0.646 -0.915 -0.903 -0.694 -0.362 -1.529 -0.797 -1.529 -1.985 0 -1.502 1.577 -2.11 2.578 -2.11Zm1.497 7h2l0.343 -1h2.29l0.223 1H23l-1.5 -7h-2l-3 7Zm4.311 -2.502h-1.48l0.936 -2.527 0.544 2.527Z" clip-rule="evenodd" stroke-width="1"></path></svg>
+				<p>2323 3434 4543 3434</p>
+				<h4></h4>
+			</div>
+		</div>
+		<div class="esconder" id="mas">
+			<div class="masIcon">
+				<button>👋</button>
+				<button>📤</button>
+				<button>🥺</button>
+			</div>
+		</div>
+		
+	</div>
+
+
+	<script src="/NEQUI-CESAR/registrer.js"></script>
+</body>
+</html>

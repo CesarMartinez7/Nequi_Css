@@ -1,0 +1,308 @@
+
+
+
+
+
+
+:root{
+    --color_nequi:#561e9a;
+    --blanco_nequi:#ECF3F8;
+    --gris_nequi: #ECE7F5;
+    --fuente-total:"Manrope";
+    --green:#fff0;
+    --white:#ffff
+}
+
+.container{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    background-color: var(--color_nequi);
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    font-family: var(--fuente-total), Calibri, 'Trebuchet MS', sans-serif;
+    /* cursor: url("/NEQUI-CESAR/img/icons8-hacha-de-minecraft-48.png"), auto; */
+}
+
+html{
+    margin: 0;
+    font-family: var(--fuente-total), Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.navbar{
+    background-color: var(--color_nequi);
+    padding: 10px 30px;
+    display: flex;
+    justify-content:space-between;
+    z-index: 20;
+    
+}
+
+
+
+.logo-menu{
+    font-size: 20px;
+    color: #ECE7F5;
+}
+
+
+.datos{
+    justify-content: center;
+    text-align: center;
+    padding: 6.74em;
+    color: white;
+    background-color: var(--color_nequi);
+}
+
+
+.boton{
+    background-color: var(--blanco_nequi);
+    color: var(--color_nequi);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    
+}
+
+
+.main{
+    border-top-right-radius: 1em;
+    background-color: rgb(255, 255, 255);
+    border-top-left-radius: 1em;
+    padding: 1.74em;
+}
+.opciones{
+    display:flex;
+    justify-content: space-around;
+}
+
+.opcion{
+    background-color: var(--gris_nequi);
+    width: 1em;
+    padding: 1em;
+    font-size: 20px;
+    border-radius: 20px;
+    text-align: center;
+    
+}
+
+.letras_opciones{
+    color: aqua;
+    
+}
+
+.movimientos{
+    padding: 1em;
+    display: block;
+}
+
+.trasferencias{
+    display: flex;
+    margin: 1em;
+    justify-content: space-evenly;
+    
+}
+
+.trasferencia{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--green);
+}
+
+h6{
+    padding: 0;
+    margin: 0;
+}
+
+h3{
+    padding:0;
+}
+
+
+.recibir{
+    color: var(--green_);
+}
+
+.flechas_green{
+    font-size: 30px;
+    color:green;
+    align-content: center;
+    background-color: var(--green);
+}
+
+.flechas_red{
+    font-size: 30px;
+    color:rgb(255, 4, 4);
+    align-content: center;
+}
+
+
+.consignar{
+    display: flex;
+    position: fixed;
+    padding: 2em;
+    color: black;
+    flex-direction: column;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px 1px var(--gris_nequi);
+    height: auto;
+    width: 50%;
+    max-width: 400px;
+}
+
+.esconder{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#consignar{
+    border: none;
+    background-color: white;
+}
+
+.input{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--gris_nequi);
+    margin: 5px 0 ;
+    padding: 4px 10px;
+    box-sizing: border-box;
+    
+    
+}
+
+
+.input:hover{
+    border: none;
+    background-color: var(--gris_nequi);
+    transition: all ease 1s;
+}
+
+
+#cerrar{
+    display: flex;
+    border-radius: 1px;
+    background-color: #ffffff;
+    color: rgb(73, 73, 73);
+    border: none;
+    padding: 5px;
+    
+}
+
+
+#seguir{
+    background-color: #DA0081;
+    border-radius: 1px;
+    border: none;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-top: 5px;
+    align-self: center;
+    border-radius: 8px;
+    
+}
+
+#seguir:hover{
+    background-color: #F1BFDA;
+    color: var(--color_nequi);
+    
+}
+
+#mas{
+    border: none;
+
+}
+
+
+button{
+    background-color: white;
+    border: none;
+}
+
+.recargar{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+    background-color: white;
+    padding: 20px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+
+#mas{
+    position: fixed;
+    transform: translate(-50%,-20%);
+    left: 80%;
+    top: 70%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.masIcon{
+    display: flex;
+}
+
+.masIcon button{
+    width: 40px;
+    font-size: 20px;
+}
+
+
+.card{
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position: fixed;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    -webkit-box-shadow: -2px 2px 10px -4px rgba(0, 0, 0, 0.37);
+    -moz-box-shadow: -2px 2px 10px -4px rgba(0, 0, 0, 0.37);
+    box-shadow: -2px 2px 10px -4px rgba(0, 0, 0, 0.37);;
+    min-width: 340px;
+}
+
+
+p{
+    font-weight: bold;
+    
+}
+
+
+.tarjeta{
+    width: 80%;
+    box-sizing: border-box;
+    background-color: #DA0081;
+    border-radius: 4px;
+    padding: 20px;
+    color: var(--blanco_nequi);
+    
+}
+
+.candado{
+    font-size: 18px;    
+}

@@ -6,10 +6,13 @@ let persona={
     telefono:3215668657,
     edad:18,
     activo: true,
-    saldo: 20000,
+    saldo:2000000000,
     tarjeta:2323,
 };
 
+
+const {nombre,apellido,telefono}=persona
+console.log(apellido,telefono)
 
 
 const consignar=document.getElementById("consignar");
@@ -138,3 +141,5 @@ console.dir(cerrarVentanaTarjetaCard)
 cerrarVentanaTarjetaCard.addEventListener("click",()=>{
     ventanaCard.classList.add("esconder")
 })
+
+

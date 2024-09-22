@@ -123,6 +123,18 @@ const candado=document.querySelector(".candado")
 
 candado.addEventListener("click",()=>{
     if(candado.children[0].classList.contains("fa-solid fa-lock")){
+        candado.children[0].classList.remove("fa-solid fa-lock")
         candado.children[0].classList.add("fa-solid fa-lock-open")
     }
+})
+
+console.log(candado.children[0])
+
+
+const cerrarVentanaTarjetaCard=document.getElementById("cerrarTarjetaCard")
+console.dir(cerrarVentanaTarjetaCard)
+
+
+cerrarVentanaTarjetaCard.addEventListener("click",()=>{
+    ventanaCard.classList.add("esconder")
 })

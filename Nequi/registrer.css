@@ -24,8 +24,9 @@
 
 body{
     margin: 0;
-    font-family: var(--fuente-total), Calibri, 'Trebuchet MS', sans-serif;
+    font-family: var(--fuente-total);
     /* cursor: url("/NEQUI-CESAR/img/icons8-hacha-de-minecraft-48.png"), auto; */
+    color-scheme: light dark;
 }
 
 html{
@@ -205,7 +206,7 @@ h3{
 
 
 #seguir{
-    background-color: #DA0081;
+    background-color: var(--color_nequi);
     border-radius: 1px;
     border: none;
     padding: 10px;
@@ -294,9 +295,9 @@ p{
 
 
 .tarjeta{
-    width: 80%;
+    width: 50vh;
     box-sizing: border-box;
-    background-color: #DA0081;
+    background-color: var(--color_nequi);
     border-radius: 4px;
     padding: 20px;
     color: var(--blanco_nequi);

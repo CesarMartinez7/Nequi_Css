@@ -6,6 +6,7 @@
     --fuente-total:"Manrope";
     --green:#fff0;
     --white:#ffff;
+    --gris-gris:#454444;
     
 }
 
@@ -16,14 +17,19 @@
     background:linear-gradient(var(--color_nequi),#5c1ec0);
     box-sizing: border-box;
     
+    
 }
 
 
 body{
-    margin: 0;
+    margin: auto;
     font-family: var(--fuente-total);
     /* cursor: url("/NEQUI-CESAR/img/icons8-hacha-de-minecraft-48.png"), auto; */
     color-scheme: light dark;
+    display: flex;
+    justify-content: center;
+    background:linear-gradient(var(--color_nequi),#5c1ec0);
+    max-width: 100vh
 }
 
 html{
@@ -51,7 +57,7 @@ html{
     
 }
 
-.navbar div button{
+.navbar div a{
     margin: 5px;
     background-color: var(--color_nequi);
 }
@@ -108,9 +114,32 @@ html{
     
 }
 
+
+
 .movimientos{
-    padding: 1em;
+    padding-top: 3em;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 15px;
+    
+}
+
+.movimientos button{
+    background-color: var(--color_nequi);
+    border-radius: 15px;
+    background-color: rgba(99, 33, 211, 0.2);
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+}
+
+
+.movimientos button span{
     display: block;
+    color: var(--gris-gris);
+    font-size: 15px;
 }
 
 .trasferencias{
@@ -361,4 +390,11 @@ p{
 .tarjeta-info-adv{
     font-size: 14px;
     font-style: italic;
+}
+
+footer{
+    background-color: var(--gris_nequi);
+    width: 100%;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
 }

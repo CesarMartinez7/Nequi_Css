@@ -1,6 +1,6 @@
 
 :root{
-    --color_nequi:#561e9a;
+    --color_nequi:#6723ba;
     --blanco_nequi:#ECF3F8;
     --gris_nequi: #ECE7F5;
     --fuente-total:"Manrope";
@@ -16,6 +16,7 @@
     flex-direction: column;
     background:linear-gradient(var(--color_nequi),#5c1ec0);
     box-sizing: border-box;
+    width: 70vh;
     
     
 }
@@ -24,12 +25,12 @@
 body{
     margin: auto;
     font-family: var(--fuente-total);
-    /* cursor: url("/NEQUI-CESAR/img/icons8-hacha-de-minecraft-48.png"), auto; */
+    /* cursor: url(""), auto;  */
     color-scheme: light dark;
     display: flex;
     justify-content: center;
-    background:linear-gradient(var(--color_nequi),#5c1ec0);
-    max-width: 100vh
+    background:linear-gradient(var(--color_nequi),#5f27b9);
+   
 }
 
 html{
@@ -325,7 +326,7 @@ button{
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    width: 60vh;
+    width: 67vh;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -337,7 +338,7 @@ button{
 
 
 p{
-    font-weight: lighter;
+    margin: 8px 0 0 0;
     font-size: 1.20em;
     
 }
@@ -397,4 +398,57 @@ footer{
     width: 100%;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
+}
+
+.recarga-input{
+    margin-top: 2vh;
+    background-color: var(--gris_nequi);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 2vh;
+    color: var(--gris-gris);
+}
+
+.recarga-input::placeholder{
+    font-size: 13px;
+}
+.recarga-span{
+    padding-top: 20px;
+    font-size: 13px;
+}
+
+.recargar-div{
+    box-sizing: border-box;
+}
+
+.recargar-div div{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.recargar-checkbox{
+    color: #5c1ec0;
+    background-color: #6723ba;
+    
+    margin-right: 20px;
+    
+    
+    
+}
+
+.recargar-div span{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 800;
+    margin-left: 10px;
+}
+article{
+    margin-top: 20px;
+    font-size: 10px;
 }

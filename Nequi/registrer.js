@@ -14,7 +14,7 @@ let persona={
 const {nombre,apellido,telefono}=persona
 console.log(apellido,telefono)
 
-
+console.log(document.querySelector(".recarga-input"))
 const consignar=document.getElementById("consignar");
 const ventana=document.getElementById("ventanaConsignar");
 const cantidadDinero=document.getElementById("cantidadDinero");

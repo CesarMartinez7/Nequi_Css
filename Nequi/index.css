@@ -1,20 +1,56 @@
 
-html,body{
-    margin:0;
-    ;
 
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    align-content: center;
+    align-items: center;
+    align-content: center;
+
+    
 }
+
 .separ{
     display: flex;
-    justify-content:space-between;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
 }
 
 
 
 .back{
-    margin-top: 15%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+
 }
 
 span{
     padding: 0 0 0 3px;
+}
+
+img{
+    width: 420px;
+    max-width: 400px;
+}
+
+.section-limit{
+    margin-top: 200px;
+    max-width: 400px;
+    box-sizing: border-box;
+    margin: auto;
+    width: 420px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    
 }

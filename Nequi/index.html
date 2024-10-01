@@ -2,70 +2,76 @@
 <html>  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/Nequi/index.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css'>
     
   </head>
   <body>
-    <nav class="navbar part separ ">
+    
+      <nav class="separ">
         <div>
         <a class="button is-5" style="border: none;"  style="margin-left:100px">
             <i class="fa-solid fa-question"></i>
         </a>
         </div>
-        <a class="button" style="border: none;">
-            <span class="icon">
-                <i class="fa-solid fa-circle-notch fa-spin"></i>
-            </span>
-            <span>Clave Dinamica</span>
-            <span><i class="fa-solid fa-paste"></i></span>
-          </a>
+        <a class="button is-size-7" style="border: none; justify-content:center">
+            <i class="fa-solid fa-circle-notch fa-spin"></i>
+            <span class="is-size-7 m-3" style="margin: 5px;">Clave dinamica</span>
+        </a>
     </nav>
 
-
-
-
-  <section class="section back" style="margin-top: 10em;">
-    <div class="container mt-6">
-      <h1 class="title has-text-centered " >
-        Nequi
-      </h1>
+  <section class="section back" >
+    <div class="container mt-1">
+      <figure class=" is-480x320">
+        <img src="https://raw.githubusercontent.com/CesarMartinez7/web/refs/heads/main/aa.avif">
+      </figure>
       
     </div>
   </section>
 
-  
-  <section class="section" style="max-width: 400px; margin:  0 auto;">
-    <div class="control mb-2 has-icons-left" style="margin-bottom: 10px;">
-        <span class="icon is-left">+57</span>
-        <input class="input" type="text" placeholder="Telefono" />
-    </div>
-    <div class="control mt-6">
-        <button class="button is-fullwidth is-warning" type="submit" href="">Entra</button>
-    </div>
-</section>
+
+  <section class="section-limit">
+        <div class="mb-5 " style="margin-bottom: 10px;">
+            <div class="field" style="width: 320px; max-width: 420px;min-width: 300px">
+                <div class="control has-icons-left has-icons-right ">
+                  <input class="input is-size-6 " type="text" disabled placeholder="Numero de celular"
+                   value="3215668657" id="numero">
+                  <span class="icon is-small is-left has-text-danger  has-text-justify ">
+                    +57
+                  </span>
+                </div>      
+        </div>
+        <div class=" mt-6 is-size-1">
+            <a type="submit" href="/nequi/veficacion.html" class="button is-fullwidth is-danger " style="font-size: 15px;">Entra</a>
+        </div>
+  </section>
 
 
-
-  <section class="section" style="margin: 0 auto; max-width: 400px;">
+  <section class="container has-text-centered" >
         
-        <button class="button" style="border: none;">
+        <button class="button is-size-7"   style="border: none;">
             <i class="fa-solid fa-qrcode"></i>
-            <span>Usar QR</span>
+            <span>Usa QR</span>
         </button>
-        <button class="button" style="border: none;">
-            <i class="fa-solid fa-mobile" style="border:none"></i>
+        <button class="button is-size-7 " style="border:none">
+            <i class="fa-solid fa-mobile" ></i>
             <span>Paga en Datafono</span>
         </button>
-        <button class="button" style="border: none;">
+        <button class="button is-size-7" style="border: none;">
             <span>By</span>
+            <span>
+              <i class="fab fa-apple"></i>
+            </span>
 
         </button>
   </section>
-  
 
-  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    </div>
+
+    
+  <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="/nequi/index.js"></script>
   </body>
 </html>

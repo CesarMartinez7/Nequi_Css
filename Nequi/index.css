@@ -1,5 +1,7 @@
 
-
+:root{
+    --color-nequi: #6723ba;
+}
 
 body{
     display: flex;
@@ -34,6 +36,7 @@ body{
 
 span{
     padding: 0 0 0 3px;
+    color: #7a7a7a  ;
 }
 
 img{
@@ -51,6 +54,23 @@ img{
     text-align: center;
     display: flex;
     justify-content: center;
+}
+input[type="text"]::placeholder {
+    color: red;
+}
 
-    
+
+*{
+    box-sizing: border-box;
+}
+
+
+.color-input{
+    background-color: var(--color-nequi);
+    color: #ffff;
+}
+
+.color-input:hover{
+    color: #ffff;
+    background-color: #6a2eb3;
 }

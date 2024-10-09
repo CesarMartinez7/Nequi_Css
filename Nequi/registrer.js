@@ -47,7 +47,7 @@ cerrarVentana.addEventListener("click",function(){
 
 
 seguir.addEventListener("click",(event)=>{
-    if (cantidadConsignar.value.length==0){
+    if (cantidadConsignar.value.length==0){1
         document.write("debes escribir una cantidad")
     }else{
         if(persona.saldo>=cantidadConsignar.value){
